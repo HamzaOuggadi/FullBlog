@@ -3,5 +3,5 @@ package net.hamzaouggadi.contentms.repositories;
 import net.hamzaouggadi.contentms.entities.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CommentRepository extends JpaRepository<String, Comment> {
+public interface CommentRepository extends JpaRepository<Comment, Long> {
 }

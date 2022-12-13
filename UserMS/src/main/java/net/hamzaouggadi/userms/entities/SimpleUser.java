@@ -1,13 +1,9 @@
 package net.hamzaouggadi.userms.entities;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
-import lombok.*;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@EqualsAndHashCode(callSuper = true)
-public class SimpleUser extends User{
+@DiscriminatorValue("SIMPLEUSER")
+public class SimpleUser extends Users {
 }

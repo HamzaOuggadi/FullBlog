@@ -1,14 +1,11 @@
 package net.hamzaouggadi.userms.entities;
 
+import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import lombok.*;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@EqualsAndHashCode(callSuper = true)
+@DiscriminatorValue("EDITOR")
 public class Editor extends PrivilegedUser{
     private int editorRank;
 }

@@ -5,6 +5,6 @@ import jakarta.persistence.Entity;
 
 import java.util.Date;
 @Entity
-public abstract class PrivilegedUser extends User{
+public abstract class PrivilegedUser extends Users {
     private Date dateOfPrivilege;
 }

@@ -1,6 +1,8 @@
 package net.hamzaouggadi.contentms.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,8 +16,8 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 public class Comment {
-    @Id
-    private String commentId;
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long commentId;
     private String commentContent;
     private Date commentDate;
     private int commentLike;
